@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Poppins", sans-serif;
+
+}
+/* Navbar Css */
+.navbar-image {
+  min-width: 50px;
+  max-height: 50px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+header {
+  position: relative;
+}
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  background-color: #3758F9;
+  color: #fff;
+  position: absolute;
+  top: 10%;
+  right: -30px;
+  transition: all 0.3s ease;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+.sidebar.close .toggle {
+  transform: rotate(1);
+}
+.image {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.name {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  gap: 20px;
+}
+.status {
+  font-size: 16px;
+  color: #778491;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  padding: 20px;
+  background-color: #FCFCFC;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+.sidebar.close {
+  width: 88px;
+}
+.sidebar .text {
+  font-size: 17px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 1;
+  margin-left: 25px;
+  margin-top: 18px;
+}
+.sidebar.close .text {
+  opacity: 0;
+}
+.search-box {
+  border-radius: 6px;
+  background-color: #F9FAFB;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #DFE4EA;
+  padding: 10px 15px;
+  margin: 30px 0;
+  font-size: 18px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+li span {
+  margin-left: 10px;
+}
+.main-content li:hover {
+  background-color: #3758f9;
+  color: white!important;
+}
+
+a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #637381;
+  display: flex;
+  align-items: center;
+}
+i {
+  color: #778491;
+  text-align: center;
+}
+.sidebar li a {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+.main-content ul li a:hover, 
+.main-content ul li a i:hover,
+.main-content ul li .text .fa-solid{
+  color: white;
+}
+
+.search-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #DFE4EA;
+  margin: 30px 0;
+}
+.button-block {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 15px;
+  background-color: #F3F4F6;
+  margin: 30px 0;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+.links-block {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 10px;
+}
+.links-block a {
+  font-size: 16px;
+  justify-content: space-between;
+  font-weight: 500;
+}
+.links-block a:hover {
+  color: #3758F9;
+}
+.dropdown {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 30px;
+  margin-left: 38px;
+  background-color: white;
+}
+.dropdown li {
+  padding: 5px 0;
+  width: 150px;
+}
+.dropdown li a {
+  font-size: 18px;
+}
+.dropdown li a:hover{
+  color: white;
+}
+.dropdown-active .dropdown {
+  display: flex;
+}
+.dropdown-parent a:hover{
+  color: white;
+}
+.dropdown-parent ul{
+  background-color: white;
+} 
+
+.fa-solid {
+  font-size: 20px !important;
+}
+
+.admin-img{
+  width: 150px;
+  height: 150px;
+}
+
+.admin-big-image{
+  width: 650px;
+  height: 450px;
+}
+
+.admin-img-container{
+  position: relative;
+  display: inline-block;
+}
+.volvo-penta-center{
+  position: absolute;
+  top: -30px !important;
+  right: 35px !important;
+  width: 100%!important;
+  height: auto;
+}
+.volvo-penta-motor2{
+  position: absolute; 
+  top: 300px; 
+  left: 365px; 
+  width: 300px; 
+  height: auto; 
+}
+
+.section-box{
+  padding: 120px;
+}
+
+.section-top{
+  margin-bottom: 30px;
+}
+
+.section-top hr{
+  display: inline-block;
+  height: 2px;
+  width: 50px;
+  background-color: #4b9ab7;
+  border: none;
+}
+
+.page.image{
+  display: table;
+  width: 100%;
+}
+
+.page-image-admin{
+  background: linear-gradient( rgba(20, 20, 20, .8), rgba(20, 20, 20, .8)),
+  url("/Kütüphanem/img/kapak-fotografi.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.page-image-about h1{
+  color: white;
+}
+
+.page-title{
+  color: white;
+}
+
+.a-btn{
+  margin-top: 25px!important;
+  margin-bottom: 25px!important;
+}
+
+.pages-title{
+  font-size: 16px!important;
+  font-family: "Poppins", sans-serif;
+}
+.metaBaslik{
+  text-align: center!important;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 15px;
+}
+
+.meta-text{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 30px;
+}
+/**Response Menu*/
+.bottom-menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  display: none; /* Menü öğelerini hizalamak için flexbox kullanılır */
+  justify-content: space-around;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-menu a {
+  color: #555;
+  text-decoration: none;
+  text-align: center;
+  flex: 1;
+  display: flex; /* İkonların ve metnin ortalanması için flexbox kullanılır */
+  flex-direction: column; /* İkonlar ve metinler dikey olarak hizalanır */
+  align-items: center; /* İkonlar ve metinler yatayda ortalanır */
+  justify-content: center; /* Tüm içerik dikeyde ortalanır */
+}
+
+.bottom-menu a i {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.bottom-menu span {
+  font-size: 13px;
+  text-align: center;
+  margin-left: 5px;
+}
+.mail-btn{
+  display: flex;
+  float: right;
+  margin: 5px;
+  margin-bottom: 50px;
+}
+.jobApp-view a i{
+  color: white;
+}
+.embed{
+  height: 1100px;
+  width:100%;
+}
+.masaustu{
+  display: flex;
+  float: left;
+}
+.mobil{
+  display: none;
+}
+.mobil a i {
+  color: white;
+}
+.a-iletisim a i {
+  color: white;
+}
+.musteri i{
+  color: white;
+  font-size: 17px;
+  padding: 3px;
+ }
+/* Mobil cihazlar için menüyü görünür yap */
+@media (max-width: 768px) {
+    .bottom-menu {
+        display: flex;
+    }
+
+    .sidebar{
+      display: none;
+    }
+
+    .section-box {
+      padding: 60px;
+  }
+  .mobile-iptal{
+    display: none;
+  }
+  .jobApp-view .col-5, .jobApp-view .col-7{
+    width: 100%;
+    padding: 10px;
+  }
+  .embed{
+    height: 400px;
+    width:100%;
+  }
+
+  .a-iletisim{
+    display: flex;
+    margin-bottom: 50px;
+    padding: 0;
+  }
+  .a-iletisim a{
+    justify-content: center;
+    align-items: center;
+  }
+  .masaustu{
+    display: none;
+  }
+ .jobs .col-6{
+  width: 100%;
+  padding: 15px;
+ }
+ .mobil{
+  display: block;
+  display: flex;
+  float: left;
+ }
+
+ .musteri .col-6{
+  width: 100%;
+ }
+
+ .musteri i{
+  color: white;
+  font-size: 17px;
+  padding: 3px;
+ }
+
+ .musteri a{
+  font-size: 14px;
+ }
+}
+
