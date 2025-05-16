@@ -219,20 +219,7 @@ i {
   position: relative;
   display: inline-block;
 }
-.volvo-penta-center{
-  position: absolute;
-  top: -30px !important;
-  right: 35px !important;
-  width: 100%!important;
-  height: auto;
-}
-.volvo-penta-motor2{
-  position: absolute; 
-  top: 300px; 
-  left: 365px; 
-  width: 300px; 
-  height: auto; 
-}
+
 
 .section-box{
   padding: 120px;
@@ -257,7 +244,7 @@ i {
 
 .page-image-admin{
   background: linear-gradient( rgba(20, 20, 20, .8), rgba(20, 20, 20, .8)),
-  url("/Kütüphanem/img/kapak-fotografi.jpg");
+  url("/Kütüphanem/img/kitap-kapak.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -293,130 +280,8 @@ i {
   margin-right: 20%;
   margin-bottom: 30px;
 }
-/**Response Menu*/
-.bottom-menu {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #fff;
-  border-top: 1px solid #ccc;
-  display: none; /* Menü öğelerini hizalamak için flexbox kullanılır */
-  justify-content: space-around;
-  padding: 10px;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-}
 
-.bottom-menu a {
-  color: #555;
-  text-decoration: none;
-  text-align: center;
-  flex: 1;
-  display: flex; /* İkonların ve metnin ortalanması için flexbox kullanılır */
-  flex-direction: column; /* İkonlar ve metinler dikey olarak hizalanır */
-  align-items: center; /* İkonlar ve metinler yatayda ortalanır */
-  justify-content: center; /* Tüm içerik dikeyde ortalanır */
+.box .index-a{
+  justify-content: center;
+  font-size: 15px;
 }
-
-.bottom-menu a i {
-  font-size: 20px;
-  margin-bottom: 5px;
-}
-
-.bottom-menu span {
-  font-size: 13px;
-  text-align: center;
-  margin-left: 5px;
-}
-.mail-btn{
-  display: flex;
-  float: right;
-  margin: 5px;
-  margin-bottom: 50px;
-}
-.jobApp-view a i{
-  color: white;
-}
-.embed{
-  height: 1100px;
-  width:100%;
-}
-.masaustu{
-  display: flex;
-  float: left;
-}
-.mobil{
-  display: none;
-}
-.mobil a i {
-  color: white;
-}
-.a-iletisim a i {
-  color: white;
-}
-.musteri i{
-  color: white;
-  font-size: 17px;
-  padding: 3px;
- }
-/* Mobil cihazlar için menüyü görünür yap */
-@media (max-width: 768px) {
-    .bottom-menu {
-        display: flex;
-    }
-
-    .sidebar{
-      display: none;
-    }
-
-    .section-box {
-      padding: 60px;
-  }
-  .mobile-iptal{
-    display: none;
-  }
-  .jobApp-view .col-5, .jobApp-view .col-7{
-    width: 100%;
-    padding: 10px;
-  }
-  .embed{
-    height: 400px;
-    width:100%;
-  }
-
-  .a-iletisim{
-    display: flex;
-    margin-bottom: 50px;
-    padding: 0;
-  }
-  .a-iletisim a{
-    justify-content: center;
-    align-items: center;
-  }
-  .masaustu{
-    display: none;
-  }
- .jobs .col-6{
-  width: 100%;
-  padding: 15px;
- }
- .mobil{
-  display: block;
-  display: flex;
-  float: left;
- }
-
- .musteri .col-6{
-  width: 100%;
- }
-
- .musteri i{
-  color: white;
-  font-size: 17px;
-  padding: 3px;
- }
-
- .musteri a{
-  font-size: 14px;
- }
-}
-

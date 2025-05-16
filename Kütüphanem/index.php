@@ -79,23 +79,23 @@ p {
   <div class="box">
       <i class="fa-solid fa-book"></i>      
       <p class="count"><?= $bookCount ?></p>
-      <p class="label">Kayıtlı Kitaplar</p>
+      <a class="index-a" href="kitaplar.php">Kayıtlı Kitaplar</a>
   </div>
     <div class="box">
       <i class="fa-solid fa-layer-group"></i>
       <p class="count"><?= $categoryCount ?></p>
-      <p class="label">Kayıtlı Kategoriler</p>
+      <a class="index-a" href="kategoriler.php">Kayıtlı Kategoriler</a>
     </div>
 
     <div class="box">
       <i class="fa-solid fa-users"></i>
       <p class="count"><?= $userCount ?></p>
-      <p class="label">Kayıtlı Üyeler</p>
+      <a class="index-a" href="users-list.php">Kayıtlı Üyeler</a>
     </div>
     <div class="box">
       <i class="fas fa-user-times"></i> 
       <p class="count"><?= $penalizedCount ?></p>
-      <p class="label">Cezalı Üyeler</p>
+      <a class="index-a" href="#">Cezalı Üyeler</a>
     </div>
 
 </div>

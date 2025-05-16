@@ -1,5 +1,4 @@
 <?php 
-session_start();
 include "classes/db.class.php";
 include "classes/authors.class.php";
 ?>

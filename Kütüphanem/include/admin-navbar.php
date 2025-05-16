@@ -15,7 +15,6 @@ include "classes/db.class.php";
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Niramit:ital,wght@1,300&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="css/admin.css">
   <!-- Jquery JS -->
   <script src="/TorpidoMakina/js/script.js"></script>

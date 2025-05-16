@@ -2,7 +2,7 @@
 include "include/admin-navbar.php";
 include "classes/users.class.php";
 include "classes/loans.class.php";
-include "classes/fines.class.php"; // Ceza işlemleri sınıfı ekleniyor
+include "classes/fines.class.php"; 
 
 $id = $_GET['id'];
 $user = new Users();
@@ -139,10 +139,4 @@ foreach ($loans as $loan) {
     </div>
 </div>
 
-        <!-- 
-
-
-Ceza Ekleme: foreach döngüsünde, ödünç alınan kitapların teslim tarihi due_date ile karşılaştırılıyor. Eğer teslim tarihi geçmiş ve kitap hala borrowed statüsündeyse, addFine fonksiyonu çağrılıyor.
-
-Ceza Durumu: Eğer bir kitap geç teslim edildiyse, ceza puanı ekleniyor. Bu durumda, kullanıcıya ceza eklenmiş olur ve 100 ceza puanına ulaşılırsa, kitap alımı engellenir.
-        -->
+       

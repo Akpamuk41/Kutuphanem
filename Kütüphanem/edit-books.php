@@ -2,8 +2,8 @@
 include "include/admin-navbar.php";
 include "classes/books.class.php";
 include "classes/users.class.php";
-include "classes/loans.class.php"; // Loans sınıfını dahil ediyoruz
-include "classes/category.class.php"; // Kategori sınıfını dahil ediyoruz
+include "classes/loans.class.php"; 
+include "classes/category.class.php"; 
 
 
 
@@ -14,7 +14,7 @@ $item = $books->getBookById($id); // Kitap verilerini alıyoruz
 $authors = $books->getAuthorsByBookId($id); // Kitap yazarlarını alıyoruz
 $loanInfo = $loans->getLoansByBookId($id); // Kitap ödünç verildi mi kontrol ediyoruz
 $categories = new Categories();
-$kategoriler = $categories->getCategories(); // doğru fonksiyon adı
+$kategoriler = $categories->getCategories(); 
 
 ?>
 

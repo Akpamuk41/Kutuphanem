@@ -2,8 +2,7 @@
 include "include/admin-navbar.php";
 include "classes/authors.class.php";
 
-// Bu sayfada post ID'yi alarak mevcut verileri almanız gerekiyor.
-// Örneğin:
+// Bu sayfada post ID'yi alarak mevcut verileri alıyoruz.
 $id = $_GET['id'];
 $authors = new Authors();
 $item = $authors->getAuthorById($id); // Post ID ile ilgili veriyi alıyoruz.
