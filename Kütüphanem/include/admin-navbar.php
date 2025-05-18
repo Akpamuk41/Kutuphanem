@@ -17,10 +17,7 @@ include "classes/db.class.php";
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/admin.css">
   <link rel="icon" type="image/x-icon" href="">
-  <!-- -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote.min.js"></script>
+  
   <title>Admin Panel</title>
 </head>
 <body>
